@@ -4,7 +4,7 @@
 	<PreFlow name="PreFlow">
 		<Request>
 		<Step>
-			<Name>Fault.404ResourceNotFound</Name>
+			<Name>Fault.404ResourceNotFound121212</Name>
 		</Step>
 		</Request>
 		<Response />
