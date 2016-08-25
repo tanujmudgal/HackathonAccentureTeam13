@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Fault.400BadRequestPayload">
+    <DisplayName>Fault.400BadRequestPayload</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <StatusCode>400</StatusCode>
+            <ReasonPhrase>Bad Request</ReasonPhrase>
+            <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">{"errors": [{
+	"message": "Bad Request",
+	"reason": "Payload has a suspicious content. Request is refused.",
+	"type": "API"
+}]}</Payload>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

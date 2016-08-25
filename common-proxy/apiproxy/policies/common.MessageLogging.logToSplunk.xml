@@ -1,0 +1,11 @@
+<MessageLogging name="common.MessageLogging.logToSplunk">
+  <Syslog>
+    <Message>{organization.name}.{apiproxy.name}.{environment.name}: {lastLogJSON}</Message>
+    <Host>spksys-npe.t-mobile.com</Host>
+    <Port>1999</Port>
+    <Protocol>TCP</Protocol>
+    <SSLInfo>
+        <Enabled>true</Enabled>
+    </SSLInfo>
+  </Syslog>
+</MessageLogging>

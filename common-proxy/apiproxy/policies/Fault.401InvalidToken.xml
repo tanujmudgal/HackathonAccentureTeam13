@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Fault.401InvalidToken">
+	<DisplayName>Fault.401InvalidToken</DisplayName>
+	<FaultResponse>
+		<Set>
+			<StatusCode>401</StatusCode>
+			<ReasonPhrase>Unauthorized</ReasonPhrase>
+			<Payload contentType="application/json" variablePrefix="@" variableSuffix="#">{"errors": [{
+	"message": "Unauthorized",
+	"reason": "Missing/Invalid/Expired Token",
+	"type": "API"
+}]}</Payload>
+		</Set>
+	</FaultResponse>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

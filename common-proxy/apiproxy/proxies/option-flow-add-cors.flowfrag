@@ -1,0 +1,10 @@
+	  <Flow name="invalidResource">
+            <Description/>
+            <Request>
+                <Step>
+          		<Name>common.Assign.SetCORSHeadersForOptionAPI</Name>
+     			 </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/**")</Condition>
+        </Flow>

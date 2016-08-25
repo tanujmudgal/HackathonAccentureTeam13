@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Fault.500RatelimitSpikeArrestViolation">
+    <DisplayName>Fault.500RatelimitSpikeArrestViolation</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">
+             {"errors": [{
+            "message": "SpikeArrestViolation",
+            "reason": "Rate limit Spike Arrest violation. Allowed rate : @ratelimit.Spike.ImposeSpikeArrest.allowed.count# for Client Id :@apigee.client_id#",
+            "type": "API"
+        	}]}
+            </Payload>
+            <StatusCode>500</StatusCode>
+            <ReasonPhrase>RateLimit Spike Arrest Violation</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

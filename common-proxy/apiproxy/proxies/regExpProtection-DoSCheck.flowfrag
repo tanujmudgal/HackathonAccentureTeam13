@@ -1,0 +1,4 @@
+     <Step>
+    	<Condition>((request.verb = "POST") or (request.verb = "PUT")) and (request.header.Content-Type = "application/json")</Condition>
+        <Name>RegularExpressionProtection.DoSCheck</Name>
+    </Step>

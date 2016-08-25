@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><APIProxy name="default" revision="1">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedBy>akshay</CreatedBy>
+    <Description>Proxy to Handle Invalid Request</Description>
+    <DisplayName>default</DisplayName>
+</APIProxy>

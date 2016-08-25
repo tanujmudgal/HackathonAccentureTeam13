@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign.TokenJSONResponse">
+    <DisplayName>Assign.TokenJSONResponse</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="Access-Control-Allow-Origin">*</Header>
+            <Header name="Access-Control-Allow-Headers">origin, x-requested-with, accept</Header>
+            <Header name="Access-Control-Max-Age">3628800</Header>
+            <Header name="Access-Control-Allow-Methods">GET, PUT, POST, DELETE</Header>
+        </Headers>
+         <Payload contentType="application/json" variablePrefix="$" variableSuffix="%">
+	{
+      "issued_at" : "$issuedAt%",
+      "scope" : "$scope%",
+      "expires_in" : "$expiresIn%",
+      "token_type" : "$tokenType%",
+      "access_token" : "$bearerToken%"
+	}
+
+        </Payload>
+    </Set>
+    <AssignVariable>
+        <Name>name</Name>
+        <Value/>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

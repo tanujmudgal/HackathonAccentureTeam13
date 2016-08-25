@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><APIProxy name="Facade-OAuth-util" revision="2">
+<!-- Fixed Oauth -->
+    <!-- DE53274  -->
+<!-- Fixed Addrum error -->
+<!-- Merge done from R1.6x to Sprint60 -->
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1457327552975</CreatedAt>
+    <CreatedBy>akshay.anand9@t-mobile.com</CreatedBy>
+    <Description>akshay.a.anand git: 76e49c3e DD5B-L-5491JBG</Description>
+    <DisplayName>Facade-OAuth-util</DisplayName>
+    <LastModifiedAt>1457328971702</LastModifiedAt>
+    <LastModifiedBy>akshay.anand9@t-mobile.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignJSONResponse</Policy>
+        <Policy>AssignScopesForToken</Policy>
+        <Policy>DecodeBaseAuthHeaders</Policy>
+        <Policy>ExtractTokenValueAndAttributes</Policy>
+        <Policy>GenerateAccessToken</Policy>
+        <Policy>VerifyAPIKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

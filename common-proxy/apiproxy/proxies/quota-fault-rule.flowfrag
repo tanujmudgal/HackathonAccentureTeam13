@@ -1,0 +1,12 @@
+<FaultRule name="QuotaViolation">
+   <Condition>(fault.name = "QuotaViolation") </Condition>
+   <Step>
+      <Name>common.Assign.SetCORSHeadersForOptionAPI</Name>
+   </Step>
+   <Step>
+      <Name>Fault.500RatelimitQuotaViolation</Name>
+   </Step>
+</FaultRule>
+
+
+

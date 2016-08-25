@@ -1,0 +1,4 @@
+ 	    <Step>
+                <Name>common.MessageLogging.logToSplunk</Name>
+		<Condition>saveLogs = true</Condition>
+            </Step>

@@ -1,0 +1,7 @@
+   <Step>
+    	<Condition>request.verb != "OPTIONS"</Condition>
+        <Name>OAuthV2.verifyAccessToken</Name>       
+    </Step>
+
+
+

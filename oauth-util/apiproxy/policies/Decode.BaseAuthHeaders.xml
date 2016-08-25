@@ -1,0 +1,8 @@
+<BasicAuthentication name="Decode.BaseAuthHeaders">
+   <DisplayName>Decode.BaseAuthHeaders</DisplayName>
+   <Operation>Decode</Operation>
+   <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <User ref="clientid"/>
+  <Password ref="clientsecret"/>
+   <Source>request.header.Authorization</Source>
+</BasicAuthentication>

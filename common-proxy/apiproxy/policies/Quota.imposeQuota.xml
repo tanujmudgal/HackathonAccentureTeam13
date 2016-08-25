@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota async="false" continueOnError="false" enabled="true" name="Quota.imposeQuota">
+    <DisplayName>Quota.imposeQuota</DisplayName>
+    <Properties/>
+    <Allow count="2000000" countRef="apiproduct.developer.quota.limit"/>
+    <Interval ref="apiproduct.developer.quota.interval">1</Interval>
+    <TimeUnit ref="apiproduct.developer.quota.timeunit">day</TimeUnit>
+    <Distributed>true</Distributed>
+    <Synchronous>false</Synchronous>
+    <Identifier ref="client_id"/>
+</Quota>

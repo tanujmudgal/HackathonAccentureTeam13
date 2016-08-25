@@ -1,0 +1,4 @@
+     <Step>
+    	<Condition>request.verb != "OPTIONS"</Condition>
+        <Name>Spike.ImposeSpikeArrest</Name>
+    </Step>

@@ -1,0 +1,21 @@
+<FaultRule name="InvalidAccessToken">
+	 <Condition>(fault.name = "invalid_access_token") or (fault.name = "InvalidAccessToken")</Condition>
+	 <Step>
+	 	<Name>common.Assign.SetCORSHeadersForOptionAPI</Name>
+	 </Step>
+	 <Step>
+		<Name>Fault.401InvalidToken</Name>
+	 </Step>
+</FaultRule>
+
+<FaultRule name="AccessTokenExpired">	
+	<Condition>(fault.name = "access_token_expired") or (fault.string = "Access Token expired")</Condition>
+	<Step>
+		<Name>common.Assign.SetCORSHeadersForOptionAPI</Name>
+	</Step>
+	<Step>
+		<Name>Fault.401InvalidToken</Name>
+	</Step>
+</FaultRule>
+
+ 

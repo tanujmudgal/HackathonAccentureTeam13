@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "dev01",
+            "policies": [],
+            "proxies": [],
+            "targets": []
+        },
+        {
+            "name": "qat01",
+            "policies": [],
+            "proxies": [],
+            "targets": []
+        },
+        {
+            "name": "GenericBuild",
+            "policies": [],
+            "proxies": [],
+            "targets": []
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault enabled="true" continueOnError="false" async="false" name="Fault.404ResourceNotFound">
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	<FaultResponse>
+		<Set>
+		<Headers>
+		<Header name="Access-Control-Allow-Origin">*</Header>
+		</Headers>
+			<Payload contentType="application/json" variablePrefix="$" variableSuffix="#">{
+			"error": "invalid-request",
+			"error-description": "The requested resource was not found"
+			}</Payload>
+			<StatusCode>404</StatusCode>
+			<ReasonPhrase>Resource Not Found</ReasonPhrase>
+		</Set>
+	</FaultResponse>
+</RaiseFault>

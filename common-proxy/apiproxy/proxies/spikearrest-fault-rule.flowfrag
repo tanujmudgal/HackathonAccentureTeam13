@@ -1,0 +1,12 @@
+<FaultRule name="SpikeArrestViolation">
+   <Condition>(fault.name = "SpikeArrestViolation") </Condition>
+   <Step>
+      <Name>common.Assign.SetCORSHeadersForOptionAPI</Name>
+   </Step>
+   <Step>
+      <Name>Fault.500RatelimitSpikeArrestViolation</Name>
+   </Step>
+</FaultRule>
+
+
+

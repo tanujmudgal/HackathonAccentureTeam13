@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign.TestSample">
+<DisplayName>Assign.TestSample</DisplayName>
+<AssignTo createNew="false" transport="http" type="request"/>
+<Copy source="request">
+<Headers/>
+<QueryParams/>
+<FormParams/>
+<Payload/>
+<Verb/>
+<Version/>
+<StatusCode/>
+<ReasonPhrase/>
+<Path/>
+</Copy>
+<Remove>
+<Headers>
+<Header name="a_header_name"></Header>
+</Headers>
+<QueryParams>
+<QueryParam name="a_query_param_name"></QueryParam>
+</QueryParams>
+<FormParams>
+<FormParam name="a_form_param_name"></FormParam>
+</FormParams>
+<Payload> </Payload>
+</Remove>
+<Add>
+<Headers/>
+<QueryParams/>
+<FormParams/>
+</Add>
+<Set>
+<Headers/>
+<QueryParams/>
+<FormParams/>
+<Payload/>
+<Verb/>
+<Version/>
+<Path/>
+<ReasonPhrase/>
+<StatusCode/>
+</Set>
+<AssignVariable>
+<Name>name</Name>
+<Value/>
+<Ref/>
+</AssignVariable>
+<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

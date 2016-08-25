@@ -1,0 +1,12 @@
+<FaultRule name="ThreatProtectionError">            
+  <Condition>(jsonattack.failed = "true") or (regularexpressionprotection.failed ="true") </Condition>
+    <Step>
+		<Name>common.Assign.SetCORSHeadersForOptionAPI</Name>
+	</Step>	
+    <Step>                
+         <Name>Fault.400BadRequestPayload</Name>            
+    </Step>
+</FaultRule>
+
+
+

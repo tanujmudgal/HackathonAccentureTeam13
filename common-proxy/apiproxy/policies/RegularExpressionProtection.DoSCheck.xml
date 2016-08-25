@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="RegularExpressionProtection.DoSCheck">
+    <DisplayName>RegularExpressionProtection.DoSCheck</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <JSONPath>
+            <Pattern ignoreCase="false">[\s]*((delete)|(exec)|(drop\s*table)|(create\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+            <Pattern ignoreCase="false">&lt;\s*script\b[^>]*>[^&lt;]+&lt;\s*/\s*script\s*></Pattern>
+            <Expression>$.</Expression>
+        </JSONPath>
+    </JSONPayload>
+    <Source>request</Source>
+</RegularExpressionProtection>

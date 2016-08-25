@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="Fault.500RatelimitQuotaViolation">
+    <DisplayName>Fault.500RatelimitQuotaViolation</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">
+             {"errors": [{
+            "message": "QuotaViolation",
+            "reason": "Rate limit quota violation. Quota limit exceeded. Client Id :@apigee.client_id#",
+            "type": "API"
+        	}]}
+            </Payload>
+            <StatusCode>500</StatusCode>
+            <ReasonPhrase>RateLimit Quota Violation</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>
