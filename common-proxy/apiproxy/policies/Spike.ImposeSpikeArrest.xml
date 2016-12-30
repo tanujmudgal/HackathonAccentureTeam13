@@ -3,5 +3,5 @@
     <DisplayName>Spike.ImposeSpikeArrest</DisplayName>
     <Properties/>
     <Identifier ref="client_ide"/>
-    <Rate>200ps</Rate>
+    <Rate>100ps</Rate>
 </SpikeArrest>
